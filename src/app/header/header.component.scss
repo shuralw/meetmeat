@@ -1,0 +1,60 @@
+$fontsizeHeader: 1rem;
+.headercontainer {
+    background-color: #3b3b3c;
+    color: white;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: grid;
+    grid-template-columns: 20% auto auto auto;
+    grid-template-rows: 80px;
+    grid-template-areas: "headerlogo start wir bratwurst";
+}
+
+.headercontainer div {
+    margin: auto;
+    font-size: $fontsizeHeader;
+    font-family: "Indie Flower";
+}
+.headercontainer a {
+    color: white;
+    text-decoration: none;
+}
+
+.headerlogo {
+    grid-area: headerlogo;
+    width: 50%;
+    height: 50%;
+}
+
+.headerlogo img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 90%;
+}
+
+.start {
+    grid-area: start;
+}
+
+.wir {
+    grid-area: wir;
+}
+
+.bratwurst {
+    grid-area: bratwurst;
+}
+
+.current a {
+    color: #64bc45;
+}
+
+.header {
+}
+.header a {
+    margin: 0 20px;
+}

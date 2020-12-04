@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@400&display=swap");
+
+$fontsizeHeader: 1rem;
+$fontsizeHeading: 2rem;
+$fontsizeFließtext: 1.2rem;
+
+.headercontainer {
+    background-color: #3b3b3c;
+    color: white;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: grid;
+    grid-template-columns: 20% auto auto auto;
+    grid-template-rows: 80px;
+    grid-template-areas: "headerlogo start wir bratwurst";
+}
+
+.headercontainer div {
+    margin: auto;
+    font-size: $fontsizeHeader;
+    font-family: "Indie Flower";
+}
+.headercontainer a {
+    color: white;
+    text-decoration: none;
+}
+
+.headerlogo {
+    grid-area: headerlogo;
+    width: 50%;
+    height: 50%;
+}
+
+.headerlogo img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 90%;
+}
+
+.start {
+    grid-area: start;
+}
+
+.wir {
+    grid-area: wir;
+}
+
+.bratwurst {
+    grid-area: bratwurst;
+}
+
+.current a {
+    color: #64bc45;
+}
+
+.header {
+}
+.header a {
+    margin: 0 20px;
+}
+
+.gridcontainer {
+    display: grid;
+    grid-template-rows: 3;
+    grid-template-areas: "logo" "text" "werte";
+    position: absolute;
+    top: 80px;
+}
+
+.logo {
+    grid-area: logo;
+}
+.logo img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.überschrift {
+    text-align: center;
+    color: #64bc45;
+    font-family: "Indie Flower";
+    font-weight: 600;
+    font-size: $fontsizeHeading;
+}
+
+.fließtext {
+    text-align: justify;
+    padding: 0 20px;
+    font-size: $fontsizeFließtext;
+    font-family: "Rajdhani", sans-serif;
+}
+
+.werte {
+    grid-area: werte;
+    display: grid;
+    margin: 40px auto 0 auto;
+    grid-template-columns: 45vw 45vw;
+    grid-template-rows: 45vw 45vw;
+    grid-template-areas: "nachhaltigkeit regionalität" "tierwohl innovation";
+}
+
+.nachhaltigkeit img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 90%;
+}
+
+.regionalität img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 90%;
+}
+
+.tierwohl img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 90%;
+}
+
+.innovation img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 90%;
+}
+
+.box {
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+        0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+        0 100px 80px rgba(0, 0, 0, 0.12);
+    background: white;
+    border-radius: 12px;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    border: 1px solid white;
+    z-index: 1;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:active .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: white;
+    color: white;
+}
+
+.flip-card-back {
+    background-color: white;
+    color: #64bc45;
+    font-family: "Indie Flower";
+    margin: auto;
+    font-size: 2rem;
+    transform: rotateY(180deg);
+    line-height: 100%;
+}
+
+@media only screen and (min-width: 1200px) {
+    .fließtext {
+        font-size: 3rem;
+    }
+}

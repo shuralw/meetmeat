@@ -3,10 +3,16 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { StartComponent } from './start/start.component';
+import { UeberunsComponent } from './ueberuns/ueberuns.component';
+import { BratwurstproComponent } from './bratwurstpro/bratwurstpro.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    StartComponent,
+    UeberunsComponent,
+    BratwurstproComponent
   ],
   imports: [
     BrowserModule,

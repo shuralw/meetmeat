@@ -7,7 +7,7 @@ $fontsizeFließtext: 1.2rem;
 
 .gridcontainer {
     display: grid;
-    grid-template-rows: 3;
+    grid-template-rows: auto auto auto;
     grid-template-areas: "logo" "text" "werte";
     position: absolute;
     top: 80px;
@@ -44,35 +44,74 @@ $fontsizeFließtext: 1.2rem;
     margin: 40px auto 0 auto;
     grid-template-columns: 45vw 45vw;
     grid-template-rows: 45vw 45vw;
-    grid-template-areas: "nachhaltigkeit regionalität" "tierwohl innovation";
+    grid-template-areas: "nachhaltigkeit nachhaltigkeit_text" "regionalität_text regionalität" "tierwohl tierwohl_text" "innovation_text innovation";
 }
 
 .nachhaltigkeit img {
+    grid-area: nachhaltigkeit;
     display: block;
     margin-left: auto;
     margin-right: auto;
     height: 90%;
+}
+
+.nachhaltigkeit_text {
+    grid-area: nachhaltigkeit_text;
+    text-align: center;
+    color: #64bc45;
+    font-family: "Indie Flower";
+    font-weight: 500;
+    font-size: $fontsizeHeading;
 }
 
 .regionalität img {
+    grid-area: regionalität;
     display: block;
     margin-left: auto;
     margin-right: auto;
     height: 90%;
+}
+
+.regionalität_text {
+    grid-area: regionalität_text;
+    text-align: center;
+    color: #64bc45;
+    font-family: "Indie Flower";
+    font-weight: 500;
+    font-size: $fontsizeHeading;
 }
 
 .tierwohl img {
+    grid-area: tierwohl;
     display: block;
     margin-left: auto;
     margin-right: auto;
     height: 90%;
 }
 
+.tierwohl_text {
+    grid-area: tierwohl_text;
+    text-align: center;
+    color: #64bc45;
+    font-family: "Indie Flower";
+    font-weight: 500;
+    font-size: $fontsizeHeading;
+}
+
 .innovation img {
+    grid-area: innovation;
     display: block;
     margin-left: auto;
     margin-right: auto;
     height: 90%;
+}
+
+.innovation_text {
+    grid-area: innovation_text;  
+    color: #64bc45;
+    font-family: "Indie Flower";
+    font-weight: 500;
+    font-size: $fontsizeHeading;
 }
 
 .box {
@@ -83,49 +122,15 @@ $fontsizeFließtext: 1.2rem;
     border-radius: 12px;
 }
 
-.flip-card {
-    background-color: transparent;
-    width: 100%;
-    height: 100%;
-    border: 1px solid white;
-    z-index: 1;
+.textzentrierer {
+    height:100%; width:100%;
+    display: table;
 }
 
-.flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-}
-
-.flip-card:active .flip-card-inner {
-    transform: rotateY(180deg);
-}
-
-.flip-card-front,
-.flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
-    backface-visibility: hidden;
-}
-
-.flip-card-front {
-    background-color: white;
-    color: white;
-}
-
-.flip-card-back {
-    background-color: white;
-    color: #64bc45;
-    font-family: "Indie Flower";
-    margin: auto;
-    font-size: 2rem;
-    transform: rotateY(180deg);
-    line-height: 100%;
+.textzentrierer p{
+    display: table-cell;
+    vertical-align: middle;
+    text-align:center;
 }
 
 @media only screen and (min-width: 1200px) {

@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { StartComponent } from './start/start.component';
 import { UeberunsComponent } from './ueberuns/ueberuns.component';
 import { BratwurstproComponent } from './bratwurstpro/bratwurstpro.component';
+import { CardComponent } from './card/card.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { BratwurstproComponent } from './bratwurstpro/bratwurstpro.component';
     StartComponent,
     UeberunsComponent,
     BratwurstproComponent,
+    CardComponent,
   ],
   imports: [
     BrowserModule,

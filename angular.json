@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "meetmeat"
+  "defaultProject": "meetmeat",
+  "cli": {
+    "analytics": "ad34d78c-a7c6-4466-b2bd-41f891cca7a9"
+  }
 }

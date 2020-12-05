@@ -4,3 +4,16 @@
 
 $fontsizeHeading: 2rem;
 $fontsizeFließtext: 1.2rem;
+
+.video {
+    position: absolute;
+    top: 90px;
+    width: 100%;
+    height: 200px;
+    margin: auto;
+}
+
+.video iframe {
+    width: 100%;
+    height: 100%;
+}

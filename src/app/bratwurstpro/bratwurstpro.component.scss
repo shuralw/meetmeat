@@ -5,15 +5,180 @@
 $fontsizeHeading: 2rem;
 $fontsizeFließtext: 1.2rem;
 
-.video {
+.gridcontainer {
+    display: grid;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
+    grid-template-areas: "bratwurstnatur" "bratwurstpro_überschrift" "bratwurstpro_text" "inhaltsstoffe_überschrift" "inhaltsstoffe_übersicht" "zubereitungshinweise_überschrift" "zubereitungshinweise_übersicht" "schlusswort";
     position: absolute;
-    top: 90px;
-    width: 90%;
-    height: 200px;
-    margin: 0 20px;
+    top: 80px;
 }
 
-.video iframe {
+.bratwurstnatur {
+   grid-area: bratwurstnatur;
+}
+
+.bratwurstnatur img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    width: 70%;
+}
+
+.bratwurstpro_überschrift {
+    text-align: center;
+    color: #64bc45;
+    font-family: "Indie Flower";
+    font-weight: 600;
+    font-size: $fontsizeHeading;
+}
+
+.bratwurstpro_text {
+    text-align: justify;
+    margin-left: 3%;
+    margin-right: 5%;
+    margin-top: 5%;
+    font-size: 1rem;
+    font-family: "Rajdhani", sans-serif;
+}
+
+.inhaltsstoffe_überschrift {
+    text-align: center;
+    color: #64bc45;
+    font-family: "Indie Flower";
+    font-weight: 600;
+    font-size: $fontsizeHeading;
+}
+
+.inhaltsstoffe_übersicht {
+    grid-area: inhaltsstoffe_übersicht;
+    display: grid;
+    margin: 40px auto 0 auto;
+    grid-template-columns: 45vw 45vw;
+    grid-template-rows: 45vw 45vw 45vw;
+    grid-template-areas: "wasser schweinefleisch" "sojaisolat kartoffelstärke" "sonnenblume gewürze" ;
+}
+
+.wasser img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 90%;
+}
+
+.schweinefleisch img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 90%;
+}
+
+.sojaisolat img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 90%;
+}
+
+.kartoffelstärke img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 90%;
+}
+
+.sonnenblumenöl img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 90%;
+}
+
+.gewürze img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 90%;
+}
+
+.box {
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+        0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+        0 100px 80px rgba(0, 0, 0, 0.12);
+    background: white;
+    border-radius: 12px;
+}
+
+.flip-card {
+    background-color: transparent;
     width: 100%;
     height: 100%;
+    border: 1px solid white;
+    z-index: 1;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:active .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: white;
+    color: white;
+}
+
+.flip-card-back {
+    background-color: white;
+    color: #64bc45;
+    font-family: "Indie Flower";
+    margin: auto;
+    font-size: 2rem;
+    transform: rotateY(180deg);
+    line-height: 100%;
+}
+
+.zubereitungshinweise_überschrift {
+    text-align: center;
+    color: #64bc45;
+    font-family: "Indie Flower";
+    font-weight: 600;
+    font-size: $fontsizeHeading;
+}
+
+.zubereitungshinweise_übersicht {
+    text-align: justify;
+    padding: 0 20px;
+    font-size: $fontsizeFließtext;
+    font-family: "Rajdhani", sans-serif;
+}
+
+.schlusswort {
+    text-align: center;
+    color: #64bc45;
+    font-family: "Indie Flower";
+    font-weight: 600;
+    font-size: $fontsizeHeading;
+}
+
+@media only screen and (min-width: 1200px) {
+    .inhaltsstoffe_übersicht {
+        font-size: 3rem;
+    }
 }

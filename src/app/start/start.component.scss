@@ -4,6 +4,8 @@
 
 $fontsizeHeading: 1.8rem;
 $fontsizeFließtext: 1.2rem;
+$fontsizeHeadinggroß: 6rem;
+$fontsizeFließtextgroß: 4rem;
 
 .gridcontainer {
     display: grid;
@@ -28,13 +30,11 @@ $fontsizeFließtext: 1.2rem;
     color: #64bc45;
     font-family: "Indie Flower";
     font-weight: 600;
-    font-size: $fontsizeHeading;
 }
 
 .fließtext {
     text-align: justify;
     padding: 0 20px;
-    font-size: $fontsizeFließtext;
     font-family: "Rajdhani", sans-serif;
 }
 
@@ -61,7 +61,6 @@ $fontsizeFließtext: 1.2rem;
     color: #64bc45;
     font-family: "Indie Flower";
     font-weight: 500;
-    font-size: $fontsizeHeading;
 }
 
 .regionalität img {
@@ -78,7 +77,6 @@ $fontsizeFließtext: 1.2rem;
     color: #64bc45;
     font-family: "Indie Flower";
     font-weight: 500;
-    font-size: $fontsizeHeading;
 }
 
 .tierwohl img {
@@ -95,7 +93,6 @@ $fontsizeFließtext: 1.2rem;
     color: #64bc45;
     font-family: "Indie Flower";
     font-weight: 500;
-    font-size: $fontsizeHeading;
 }
 
 .innovation img {
@@ -111,7 +108,6 @@ $fontsizeFließtext: 1.2rem;
     color: #64bc45;
     font-family: "Indie Flower";
     font-weight: 500;
-    font-size: $fontsizeHeading;
 }
 
 .box {
@@ -133,8 +129,21 @@ $fontsizeFließtext: 1.2rem;
     text-align:center;
 }
 
+.textgrößeüberschriften {
+    font-size: $fontsizeHeading;
+}
+
+.textgrößefießtext {
+    font-size: $fontsizeFließtext;
+}
+
 @media only screen and (min-width: 1200px) {
-    .fließtext {
-        font-size: 3rem;
+    .textgrößeüberschriften {
+        font-size: $fontsizeHeadinggroß;
     }
+
+    .textgrößefießtext {
+        font-size: $fontsizeFließtextgroß;
+    }
+    
 }

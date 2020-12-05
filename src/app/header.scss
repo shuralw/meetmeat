@@ -1,7 +1,8 @@
+@import "/src/styles.scss";
 
 $fontsizeHeader: 1rem;
 .headercontainer {
-    background-color: #3b3b3c;
+    background-color: $meetmeatmaingray;
     color: white;
     height: 80px;
     width: 100%;

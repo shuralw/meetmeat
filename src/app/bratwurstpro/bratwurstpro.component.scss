@@ -4,6 +4,10 @@
 
 $fontsizeHeading: 2rem;
 $fontsizeFließtext: 1.2rem;
+$fontsizeZutaten : 1.4rem;
+$fontsizeHeadinggroß: 6rem;
+$fontsizeFließtextgroß: 4rem;
+$fontsizeZutatengroß: 4rem;
 
 .gridcontainer {
     display: grid;
@@ -11,6 +15,7 @@ $fontsizeFließtext: 1.2rem;
     grid-template-areas: "bratwurstnatur" "bratwurstpro_überschrift" "bratwurstpro_text" "inhaltsstoffe_überschrift" "inhaltsstoffe_übersicht" "zubereitungshinweise_überschrift" "zubereitungshinweise_übersicht" "schlusswort";
     position: absolute;
     top: 80px;
+    grid-row-gap: 35px;
 }
 
 .bratwurstnatur {
@@ -22,7 +27,9 @@ $fontsizeFließtext: 1.2rem;
     margin-left: auto;
     margin-right: auto;
     margin-top: 1rem;
-    width: 70%;
+    width: 90%;
+    border-radius: 8px;
+    border: 2px solid $meetmeatmaingray;
 }
 
 .bratwurstpro_überschrift {
@@ -30,7 +37,7 @@ $fontsizeFließtext: 1.2rem;
     color: #64bc45;
     font-family: "Indie Flower";
     font-weight: 600;
-    font-size: $fontsizeHeading;
+
 }
 
 .bratwurstpro_text {
@@ -38,7 +45,6 @@ $fontsizeFließtext: 1.2rem;
     margin-left: 3%;
     margin-right: 5%;
     margin-top: 5%;
-    font-size: 1rem;
     font-family: "Rajdhani", sans-serif;
 }
 
@@ -47,7 +53,7 @@ $fontsizeFließtext: 1.2rem;
     color: #64bc45;
     font-family: "Indie Flower";
     font-weight: 600;
-    font-size: $fontsizeHeading;
+
 }
 
 .inhaltsstoffe_übersicht {
@@ -55,103 +61,138 @@ $fontsizeFließtext: 1.2rem;
     display: grid;
     margin: 40px auto 0 auto;
     grid-template-columns: 45vw 45vw;
-    grid-template-rows: 45vw 45vw 45vw;
-    grid-template-areas: "wasser schweinefleisch" "sojaisolat kartoffelstärke" "sonnenblume gewürze" ;
+    grid-template-rows: 45vw 45vw 45vw 45vw 45vw 45vw 45vw;
+    grid-template-areas: "wasser wasser_text" 
+    "schweinefleisch_text schweinefleisch" 
+    "sojaisolat sojaisolat_text"
+    "kartoffelstärke_text kartoffelstärke" 
+    "sonnenblumenöl sonnenblumenöl_text"
+    "gewürze_text gewürze" 
+    "hilfsmittel hilfsmittel_text";
+    grid-row-gap: 20px;
 }
 
 .wasser img {
+    grid-area: wasser;
     display: block;
     margin-left: auto;
     margin-right: auto;
     height: 90%;
 }
 
-.schweinefleisch img {
+.wasser_text {
+    grid-area: wasser_text;  
+    color: #64bc45;
+    font-family: "Indie Flower";
+    font-weight: 500;
+}
+
+.schweinefleisch  {
+    grid-area: schweinefleisch;
     display: block;
     margin-left: auto;
     margin-right: auto;
     height: 90%;
 }
 
-.sojaisolat img {
+.schweinefleisch_text {
+    grid-area: schweinefleisch_text;  
+    color: #64bc45;
+    font-family: "Indie Flower";
+    font-weight: 500;
+}
+
+.sojaisolat {
+    grid-area: sojaisolat;
     display: block;
     margin-left: auto;
     margin-right: auto;
     height: 90%;
 }
 
-.kartoffelstärke img {
+.sojaisolat_text {
+    grid-area: sojaisolat_text;  
+    color: #64bc45;
+    font-family: "Indie Flower";
+    font-weight: 500;
+}
+
+.kartoffelstärke {
+    grid-area: kartoffelstärke;
     display: block;
     margin-left: auto;
     margin-right: auto;
     height: 90%;
 }
 
-.sonnenblumenöl img {
+.kartoffelstärke_text {
+    grid-area: kartoffelstärke_text;  
+    color: #64bc45;
+    font-family: "Indie Flower";
+    font-weight: 500;
+}
+
+.sonnenblumenöl {
+    grid-area: sonnenblumenöl;
     display: block;
     margin-left: auto;
     margin-right: auto;
     height: 90%;
 }
 
-.gewürze img {
+.sonnenblumenöl_text {
+    grid-area: sonnenblumenöl_text;  
+    color: #64bc45;
+    font-family: "Indie Flower";
+    font-weight: 500;
+}
+
+.gewürze {
+    grid-area: gewürze;
     display: block;
     margin-left: auto;
     margin-right: auto;
     height: 90%;
 }
+
+.gewürze_text {
+    grid-area: gewürze_text;  
+    color: #64bc45;
+    font-family: "Indie Flower";
+    font-weight: 500;
+}
+
+.hilfsmittel {
+    grid-area: hilfsmittel;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 90%;
+}
+
+.hilfsmittel_text {
+    grid-area: hilfsmittel_text;  
+    color: #64bc45;
+    font-family: "Indie Flower";
+    font-weight: 500;
+}
+
 
 .box {
-    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-        0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-        0 100px 80px rgba(0, 0, 0, 0.12);
-    background: white;
+     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+   
     border-radius: 12px;
 }
 
-.flip-card {
-    background-color: transparent;
-    width: 100%;
-    height: 100%;
-    border: 1px solid white;
-    z-index: 1;
+.textzentrierer {
+    height:100%; width:100%;
+    display: table;
 }
 
-.flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-}
-
-.flip-card:active .flip-card-inner {
-    transform: rotateY(180deg);
-}
-
-.flip-card-front,
-.flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
-    backface-visibility: hidden;
-}
-
-.flip-card-front {
-    background-color: white;
-    color: white;
-}
-
-.flip-card-back {
-    background-color: white;
-    color: #64bc45;
-    font-family: "Indie Flower";
-    margin: auto;
-    font-size: 2rem;
-    transform: rotateY(180deg);
-    line-height: 100%;
+.textzentrierer p{
+    display: table-cell;
+    vertical-align: middle;
+    text-align:center;
 }
 
 .zubereitungshinweise_überschrift {
@@ -159,13 +200,12 @@ $fontsizeFließtext: 1.2rem;
     color: #64bc45;
     font-family: "Indie Flower";
     font-weight: 600;
-    font-size: $fontsizeHeading;
+
 }
 
 .zubereitungshinweise_übersicht {
     text-align: justify;
     padding: 0 20px;
-    font-size: $fontsizeFließtext;
     font-family: "Rajdhani", sans-serif;
 }
 
@@ -174,11 +214,47 @@ $fontsizeFließtext: 1.2rem;
     color: #64bc45;
     font-family: "Indie Flower";
     font-weight: 600;
+}
+
+.textgrößeüberschriften {
     font-size: $fontsizeHeading;
 }
 
-@media only screen and (min-width: 1200px) {
+.textgrößefießtext {
+    font-size: $fontsizeFließtext;
+}
+
+.textgrößezutaten {
+    font-size: $fontsizeZutaten;
+}
+
+@media only screen and (min-width: 1000px) {
+
     .inhaltsstoffe_übersicht {
-        font-size: 3rem;
+        grid-area: inhaltsstoffe_übersicht;
+        display: grid;
+        margin: 40px auto 0 auto;
+        grid-template-columns: 45vw 45vw;
+        grid-template-rows: 45vw 45vw 45vw 45vw 45vw 45vw 45vw;
+        grid-template-areas: "wasser wasser_text" 
+        "schweinefleisch_text schweinefleisch" 
+        "sojaisolat sojaisolat_text"
+        "kartoffelstärke_text kartoffelstärke" 
+        "sonnenblumenöl sonnenblumenöl_text"
+        "gewürze_text gewürze" 
+        "hilfsmittel hilfsmittel_text";
+        grid-row-gap: 20px;
+    }
+    
+    .textgrößeüberschriften {
+        font-size: $fontsizeHeadinggroß;
+    }
+
+    .textgrößefießtext {
+        font-size: $fontsizeFließtextgroß;
+    }
+    
+    .textgrößezutaten {
+        font-size: $fontsizeZutatengroß;
     }
 }

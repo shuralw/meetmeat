@@ -12,4 +12,5 @@ export class StartComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  
 }

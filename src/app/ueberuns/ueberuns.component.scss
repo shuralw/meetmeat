@@ -5,9 +5,17 @@
 $fontsizeHeading: 2rem;
 $fontsizeFließtext: 1.2rem;
 
-.video {
+.gridcontainer {
+    display: grid;
+    grid-template-rows: auto auto auto auto auto ;
+    grid-template-areas: "video" "team_überschrift" "team_übersicht" "werte_überschrift" "werte_übersicht";
     position: absolute;
     top: 90px;
+}
+
+
+.video {
+    grid-area: video;
     width: 100%;
     height: 200px;
     margin: auto;
@@ -16,4 +24,38 @@ $fontsizeFließtext: 1.2rem;
 .video iframe {
     width: 100%;
     height: 100%;
+}
+
+.team_überschrift {
+    grid-area: team_überschrift;
+    text-align: center;
+    color: #64bc45;
+    font-family: "Indie Flower";
+    font-weight: 600;
+    font-size: $fontsizeHeading;
+}
+
+.team_übersicht {
+    grid-area: team_übersicht;
+    text-align: justify;
+    padding: 0 20px;
+    font-size: $fontsizeFließtext;
+    font-family: "Rajdhani", sans-serif;
+}
+
+.werte_überschrift {
+    grid-area: werte_überschrift;
+    text-align: center;
+    color: #64bc45;
+    font-family: "Indie Flower";
+    font-weight: 600;
+    font-size: $fontsizeHeading;
+}
+
+.werte_übersicht {
+    grid-area: werte_übersicht;
+    text-align: justify;
+    padding: 0 20px;
+    font-size: $fontsizeFließtext;
+    font-family: "Rajdhani", sans-serif;
 }

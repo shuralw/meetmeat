@@ -6,6 +6,8 @@ $fontsizeHeading: 1.8rem;
 $fontsizeFließtext: 1.2rem;
 $fontsizeHeadinggroß: 6rem;
 $fontsizeFließtextgroß: 4rem;
+$Abstandfließtext: 15px;
+$Abstandfließtextgroß: 100px;
 
 .gridcontainer {
     display: grid;
@@ -34,7 +36,7 @@ $fontsizeFließtextgroß: 4rem;
 
 .fließtext {
     text-align: justify;
-    padding: 0 20px;
+    margin: 0 $Abstandfließtext;
     font-family: "Rajdhani", sans-serif;
 }
 
@@ -145,5 +147,12 @@ $fontsizeFließtextgroß: 4rem;
     .textgrößefießtext {
         font-size: $fontsizeFließtextgroß;
     }
+    
+    .fließtext {
+        text-align: justify;
+        padding: 0 20px;
+        margin: 0 $Abstandfließtextgroß;
+        font-family: "Rajdhani", sans-serif;
+    }    
     
 }

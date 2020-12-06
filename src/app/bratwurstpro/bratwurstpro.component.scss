@@ -8,6 +8,8 @@ $fontsizeZutaten : 1.4rem;
 $fontsizeHeadinggroß: 6rem;
 $fontsizeFließtextgroß: 4rem;
 $fontsizeZutatengroß: 4rem;
+$Abstandfließtext: 15px;
+$Abstandfließtextgroß: 100px;
 
 .gridcontainer {
     display: grid;
@@ -15,7 +17,7 @@ $fontsizeZutatengroß: 4rem;
     grid-template-areas: "bratwurstnatur" "bratwurstpro_überschrift" "bratwurstpro_text" "inhaltsstoffe_überschrift" "inhaltsstoffe_übersicht" "zubereitungshinweise_überschrift" "zubereitungshinweise_übersicht" "schlusswort";
     position: absolute;
     top: 80px;
-    grid-row-gap: 35px;
+    grid-row-gap: 15px;
 }
 
 .bratwurstnatur {
@@ -200,7 +202,6 @@ $fontsizeZutatengroß: 4rem;
     color: #64bc45;
     font-family: "Indie Flower";
     font-weight: 600;
-
 }
 
 .zubereitungshinweise_übersicht {
@@ -222,6 +223,7 @@ $fontsizeZutatengroß: 4rem;
 
 .textgrößefießtext {
     font-size: $fontsizeFließtext;
+    margin: $Abstandfließtext;
 }
 
 .textgrößezutaten {
@@ -252,6 +254,7 @@ $fontsizeZutatengroß: 4rem;
 
     .textgrößefießtext {
         font-size: $fontsizeFließtextgroß;
+        margin: $Abstandfließtextgroß;
     }
     
     .textgrößezutaten {

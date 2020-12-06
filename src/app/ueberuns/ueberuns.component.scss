@@ -6,6 +6,8 @@ $fontsizeHeading: 2rem;
 $fontsizeFließtext: 1.2rem;
 $fontsizeHeadinggroß: 6rem;
 $fontsizeFließtextgroß: 4rem;
+$Abstandfließtext: 15px;
+$Abstandfließtextgroß: 100px;
 
 
 .gridcontainer {
@@ -31,6 +33,7 @@ $fontsizeFließtextgroß: 4rem;
 
 .team_überschrift {
     grid-area: team_überschrift;
+    margin: auto;
     text-align: auto;
     color: #64bc45;
     font-family: "Indie Flower";
@@ -40,7 +43,6 @@ $fontsizeFließtextgroß: 4rem;
 .team_übersicht {
     grid-area: team_übersicht;
     text-align: justify;
-    padding: 0 20px;
     font-family: "Rajdhani", sans-serif;
 }
 
@@ -55,7 +57,6 @@ $fontsizeFließtextgroß: 4rem;
 .werte_übersicht {
     grid-area: werte_übersicht;
     text-align: justify;
-    padding: 0 20px;
     font-family: "Rajdhani", sans-serif;
 }
 
@@ -65,6 +66,7 @@ $fontsizeFließtextgroß: 4rem;
 
 .textgrößefießtext {
     font-size: $fontsizeFließtext;
+    margin: $Abstandfließtext;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -75,6 +77,7 @@ $fontsizeFließtextgroß: 4rem;
 
     .textgrößefießtext {
         font-size: $fontsizeFließtextgroß;
+        margin: $Abstandfließtextgroß;
     }
     
 }

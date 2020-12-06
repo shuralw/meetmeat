@@ -1,6 +1,8 @@
 @import "/src/styles.scss";
 
 $fontsizeHeader: 1rem;
+$fontsizeHeadergroß: 2rem;
+
 .headercontainer {
     background-color: $meetmeatmaingray;
     color: white;
@@ -21,6 +23,7 @@ $fontsizeHeader: 1rem;
     font-size: $fontsizeHeader;
     font-family: "Indie Flower";
 }
+
 .headercontainer a {
     color: white;
     text-decoration: none;
@@ -55,8 +58,23 @@ $fontsizeHeader: 1rem;
     color: #64bc45;
 }
 
-.header {
-}
 .header a {
     margin: 0 20px;
+}
+
+@media only screen and (min-width: 1000px) {
+
+    .headercontainer div {
+        margin: auto;
+        font-size: $fontsizeHeadergroß;
+        font-family: "Indie Flower";
+    }
+
+    .headerlogo {
+        grid-area: headerlogo;
+        width: 4vw;
+        max-width: 70px;
+        height: 4vw;
+        max-height:70px;
+    }
 }

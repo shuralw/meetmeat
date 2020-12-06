@@ -139,6 +139,10 @@ $Abstandfließtextgroß: 100px;
     font-size: $fontsizeFließtext;
 }
 
+.nobr {
+    white-space: nowrap;
+}
+
 @media only screen and (min-width: 1200px) {
     .textgrößeüberschriften {
         font-size: $fontsizeHeadinggroß;

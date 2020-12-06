@@ -8,16 +8,16 @@ $fontsizeHeadinggroß: 6rem;
 $fontsizeFließtextgroß: 4rem;
 $Abstandfließtext: 15px;
 $Abstandfließtextgroß: 100px;
-
+$Merkmalschrift: 1rem;
+$Merkmalschriftgroß: 2rem; 
 
 .gridcontainer {
     display: grid;
     grid-template-rows: auto auto auto auto auto ;
-    grid-template-areas: "video" "team_überschrift" "team_übersicht" "werte_überschrift" "werte_übersicht";
+    grid-template-areas: "video" "team_überschrift" "team_übersicht" "vorstellung" "werte_überschrift" "werte_übersicht";
     position: absolute;
     top: 90px;
 }
-
 
 .video {
     grid-area: video;
@@ -46,6 +46,78 @@ $Abstandfließtextgroß: 100px;
     font-family: "Rajdhani", sans-serif;
 }
 
+.vorstellung {
+    grid-area: vorstellung;
+    display: grid;
+    margin: 40px auto 0 auto;
+    grid-template-columns: 45vw 45vw ;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "helene helene_text" 
+    "jp_text jp" 
+    "esther esther_text" 
+    "janna_text janna"
+}
+
+.helene img {
+    grid-area: helene;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.helene_text {
+    grid-area: helene_text;  
+    color: #64bc45;
+    font-family: "Indie Flower";
+    font-weight: 500;
+}
+
+.jp img {
+    grid-area: jp;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.jp_text {
+    grid-area: jp_text;  
+    color: #64bc45;
+    font-family: "Indie Flower";
+    font-weight: 500;
+}
+
+.esther img {
+    grid-area: esther;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.esther_text {
+    grid-area: esther_text;  
+    color: #64bc45;
+    font-family: "Indie Flower";
+    font-weight: 500;
+}
+
+.janna img {
+    grid-area: janna;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.janna_text {
+    grid-area: janna_text;  
+    color: #64bc45;
+    font-family: "Indie Flower";
+    font-weight: 500;
+}
+
 .werte_überschrift {
     grid-area: werte_überschrift;
     text-align: center;
@@ -60,6 +132,14 @@ $Abstandfließtextgroß: 100px;
     font-family: "Rajdhani", sans-serif;
 }
 
+.box {
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+        0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+        0 100px 80px rgba(0, 0, 0, 0.12);
+    background: white;
+    border-radius: 12px;
+}
+
 .textgrößeüberschriften {
     font-size: $fontsizeHeading;
 }
@@ -67,6 +147,10 @@ $Abstandfließtextgroß: 100px;
 .textgrößefießtext {
     font-size: $fontsizeFließtext;
     margin: $Abstandfließtext;
+}
+
+.merkmalschrift {
+    font-size: $Merkmalschrift;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -78,6 +162,10 @@ $Abstandfließtextgroß: 100px;
     .textgrößefießtext {
         font-size: $fontsizeFließtextgroß;
         margin: $Abstandfließtextgroß;
+    }
+
+    .merkmalschrift {
+        font-size: $Merkmalschriftgroß;
     }
     
 }

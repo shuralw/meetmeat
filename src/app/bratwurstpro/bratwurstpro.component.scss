@@ -5,16 +5,16 @@
 $fontsizeHeading: 2rem;
 $fontsizeFließtext: 1.2rem;
 $fontsizeZutaten : 1.4rem;
-$fontsizeHeadinggroß: 6rem;
-$fontsizeFließtextgroß: 4rem;
-$fontsizeZutatengroß: 4rem;
+$fontsizeHeadinggroß: 5rem;
+$fontsizeFließtextgroß: 3rem;
+$fontsizeZutatengroß: 3rem;
 $Abstandfließtext: 15px;
 $Abstandfließtextgroß: 100px;
 
 .gridcontainer {
     display: grid;
     grid-template-rows: auto auto auto auto auto auto auto auto;
-    grid-template-areas: "bratwurstnatur" "bratwurstpro_überschrift" "bratwurstpro_text" "inhaltsstoffe_überschrift" "inhaltsstoffe_übersicht" "zubereitungshinweise_überschrift" "zubereitungshinweise_übersicht" "schlusswort";
+    grid-template-areas: "bratwurstnatur" "bratwurstpro_überschrift" "bratwurstpro_text" "inhaltsstoffe_überschrift" "inhaltsstoffe_übersicht" "zubereitungshinweise_überschrift" "zubereitungshinweise_übersicht" "gallery" "schlusswort";
     position: absolute;
     top: 80px;
     grid-row-gap: 15px;
@@ -233,6 +233,7 @@ $Abstandfließtextgroß: 100px;
 .nobr {
     white-space: nowrap;
 }
+
 
 @media only screen and (min-width: 1000px) {
 

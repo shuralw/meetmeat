@@ -4,8 +4,8 @@
 
 $fontsizeHeading: 2rem;
 $fontsizeFließtext: 1.2rem;
-$fontsizeHeadinggroß: 6rem;
-$fontsizeFließtextgroß: 4rem;
+$fontsizeHeadinggroß: 5rem;
+$fontsizeFließtextgroß: 3rem;
 $Abstandfließtext: 15px;
 $Abstandfließtextgroß: 100px;
 $Merkmalschrift: 1rem;
@@ -34,6 +34,7 @@ $Merkmalschriftgroß: 3rem;
 .team_überschrift {
     grid-area: team_überschrift;
     margin: auto;
+    margin-top: 100px;
     text-align: auto;
     color: #64bc45;
     font-family: "Indie Flower";
@@ -172,5 +173,10 @@ $Merkmalschriftgroß: 3rem;
         font-size: $Merkmalschriftgroß;
     }
 
-
+    .video {
+        grid-area: video;
+        width: 50%;
+        height: 400px;
+        margin: auto;
+    }
 }

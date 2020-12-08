@@ -14,7 +14,7 @@ $Abstandfließtextgroß: 100px;
 .gridcontainer {
     display: grid;
     grid-template-rows: auto auto auto auto auto auto auto auto;
-    grid-template-areas: "bratwurstnatur" "bratwurstpro_überschrift" "bratwurstpro_text" "inhaltsstoffe_überschrift" "inhaltsstoffe_übersicht" "zubereitungshinweise_überschrift" "zubereitungshinweise_übersicht" "gallery" "schlusswort";
+    grid-template-areas: "bratwurstnatur" "bratwurstpro_überschrift" "bratwurstpro_text" "inhaltsstoffe_überschrift" "inhaltsstoffe_übersicht" "zubereitungshinweise_überschrift" "zubereitungshinweise_übersicht" "gallery" "schlusswort" "bottom";
     position: absolute;
     top: 80px;
     grid-row-gap: 15px;

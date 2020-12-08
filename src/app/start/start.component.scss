@@ -12,9 +12,10 @@ $Abstandfließtextgroß: 100px;
 .gridcontainer {
     display: grid;
     grid-template-rows: auto auto auto;
-    grid-template-areas: "logo" "text" "werte";
+    grid-template-areas: "logo" "text" "werte" "bottom";
     position: absolute;
     top: 80px;
+    grid-row-gap: 15px;
 }
 
 .logo {

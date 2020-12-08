@@ -8,15 +8,16 @@ $fontsizeHeadinggroß: 5rem;
 $fontsizeFließtextgroß: 3rem;
 $Abstandfließtext: 15px;
 $Abstandfließtextgroß: 100px;
-$Merkmalschrift: 1rem;
+$Merkmalschrift: 0,7rem;
 $Merkmalschriftgroß: 3rem; 
 
 .gridcontainer {
     display: grid;
     grid-template-rows: auto auto auto auto auto ;
-    grid-template-areas: "video" "team_überschrift" "team_übersicht" "vorstellung" "werte_überschrift" "werte_übersicht";
+    grid-template-areas: "video" "team_überschrift" "team_übersicht" "vorstellung" "bottom";
     position: absolute;
     top: 90px;
+    grid-row-gap: 15px;
 }
 
 .video {
@@ -62,6 +63,7 @@ $Merkmalschriftgroß: 3rem;
 .helene img {
     grid-area: helene;
     display: block;
+    margin-top: 50%;
     margin-left: auto;
     margin-right: auto;
     width: 90%;
@@ -132,6 +134,7 @@ $Merkmalschriftgroß: 3rem;
     text-align: justify;
     font-family: "Rajdhani", sans-serif;
 }
+
 
 .box {
     box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048),

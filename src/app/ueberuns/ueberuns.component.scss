@@ -63,7 +63,6 @@ $Merkmalschriftgroß: 3rem;
 .helene img {
     grid-area: helene;
     display: block;
-    margin-top: 50%;
     margin-left: auto;
     margin-right: auto;
     width: 90%;
@@ -109,8 +108,7 @@ $Merkmalschriftgroß: 3rem;
 .janna img {
     grid-area: janna;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     width: 90%;
 }
 

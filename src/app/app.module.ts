@@ -7,6 +7,7 @@ import { StartComponent } from './start/start.component';
 import { UeberunsComponent } from './ueberuns/ueberuns.component';
 import { BratwurstproComponent } from './bratwurstpro/bratwurstpro.component';
 import { CardComponent } from './card/card.component';
+import { ImpressumComponent } from './impressum/impressum.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { CardComponent } from './card/card.component';
     UeberunsComponent,
     BratwurstproComponent,
     CardComponent,
+    ImpressumComponent,
   ],
   imports: [
     BrowserModule,

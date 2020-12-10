@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "meetmeat-b5332"
+  },
+  "targets": {
+    "meetmeat-b5332": {
+      "hosting": {
+        "meetmeat": [
+          "meetmeat-b5332"
+        ]
+      }
+    }
+  }
+}

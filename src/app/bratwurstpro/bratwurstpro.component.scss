@@ -61,6 +61,7 @@ $Abstandfließtextgroß: 100px;
 }
 
 .bratwurstpro_überschrift {
+    grid-area: bratwurstpro_überschrift;
     text-align: center;
     color: #64bc45;
     font-family: "Indie Flower";
@@ -69,6 +70,7 @@ $Abstandfließtextgroß: 100px;
 }
 
 .bratwurstpro_text {
+    grid-area: bratwurstpro_text;
     text-align: justify;
     margin-left: 3%;
     margin-right: 5%;
@@ -77,6 +79,7 @@ $Abstandfließtextgroß: 100px;
 }
 
 .inhaltsstoffe_überschrift {
+    grid-area: inhaltsstoffe_überschrift;
     text-align: center;
     color: #64bc45;
     font-family: "Indie Flower";
@@ -224,6 +227,7 @@ $Abstandfließtextgroß: 100px;
 }
 
 .zubereitungshinweise_überschrift {
+    grid-area: zubereitungshinweise_überschrift;
     text-align: center;
     color: #64bc45;
     font-family: "Indie Flower";
@@ -231,12 +235,14 @@ $Abstandfließtextgroß: 100px;
 }
 
 .zubereitungshinweise_übersicht {
+    grid-area: zubereitungshinweise_übersicht;
     text-align: justify;
     padding: 0 20px;
     font-family: "Rajdhani", sans-serif;
 }
 
 .schlusswort {
+    grid-area: schlusswort;
     text-align: center;
     color: #64bc45;
     font-family: "Indie Flower";
@@ -289,5 +295,17 @@ $Abstandfließtextgroß: 100px;
 
     .textgrößezutaten {
         font-size: $fontsizeZutatengroß;
+    }
+    .video {
+        grid-area: video;
+        width: 50%;
+        height: 400px;
+        margin: 18px auto auto auto;
+    }
+    .video2 {
+        grid-area: video2;
+        width: 50%;
+        height: 400px;
+        margin: auto;
     }
 }

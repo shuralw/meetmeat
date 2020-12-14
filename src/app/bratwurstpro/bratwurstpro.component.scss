@@ -4,7 +4,7 @@
 
 $fontsizeHeading: 2rem;
 $fontsizeFließtext: 1.2rem;
-$fontsizeZutaten : 1.4rem;
+$fontsizeZutaten: 1.4rem;
 $fontsizeHeadinggroß: 5rem;
 $fontsizeFließtextgroß: 3rem;
 $fontsizeZutatengroß: 3rem;
@@ -13,15 +13,41 @@ $Abstandfließtextgroß: 100px;
 
 .gridcontainer {
     display: grid;
-    grid-template-rows: auto auto auto auto auto auto auto auto;
-    grid-template-areas: "bratwurstnatur" "bratwurstpro_überschrift" "bratwurstpro_text" "inhaltsstoffe_überschrift" "inhaltsstoffe_übersicht" "zubereitungshinweise_überschrift" "zubereitungshinweise_übersicht" "gallery" "schlusswort" "bottom";
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    grid-template-areas: "video" "bratwurstnatur" "bratwurstpro_überschrift" "bratwurstpro_text" "inhaltsstoffe_überschrift" "inhaltsstoffe_übersicht" "zubereitungshinweise_überschrift" "zubereitungshinweise_übersicht" "gallery" "schlusswort" "video2" "bottom";
     position: absolute;
     top: 80px;
     grid-row-gap: 15px;
 }
 
+.video {
+    grid-area: video;
+    width: 90%;
+    height: 100%;
+    margin: 18px auto auto auto;
+}
+
+.video iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+
+.video2 {
+    grid-area: video2;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+}
+
+.video2 iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+
 .bratwurstnatur {
-   grid-area: bratwurstnatur;
+    grid-area: bratwurstnatur;
 }
 
 .bratwurstnatur img {
@@ -39,7 +65,7 @@ $Abstandfließtextgroß: 100px;
     color: #64bc45;
     font-family: "Indie Flower";
     font-weight: 600;
-
+    margin-top: 24px;
 }
 
 .bratwurstpro_text {
@@ -55,7 +81,6 @@ $Abstandfließtextgroß: 100px;
     color: #64bc45;
     font-family: "Indie Flower";
     font-weight: 600;
-
 }
 
 .inhaltsstoffe_übersicht {
@@ -64,13 +89,14 @@ $Abstandfließtextgroß: 100px;
     margin: 40px auto 0 auto;
     grid-template-columns: 45vw 45vw;
     grid-template-rows: 45vw 45vw 45vw 45vw 45vw 45vw 45vw;
-    grid-template-areas: "wasser wasser_text" 
-    "schweinefleisch_text schweinefleisch" 
-    "sojaisolat sojaisolat_text"
-    "kartoffelstärke_text kartoffelstärke" 
-    "sonnenblumenöl sonnenblumenöl_text"
-    "gewürze_text gewürze" 
-    "hilfsmittel hilfsmittel_text";
+    grid-template-areas:
+        "wasser wasser_text"
+        "schweinefleisch_text schweinefleisch"
+        "sojaisolat sojaisolat_text"
+        "kartoffelstärke_text kartoffelstärke"
+        "sonnenblumenöl sonnenblumenöl_text"
+        "gewürze_text gewürze"
+        "hilfsmittel hilfsmittel_text";
     grid-row-gap: 20px;
 }
 
@@ -83,13 +109,13 @@ $Abstandfließtextgroß: 100px;
 }
 
 .wasser_text {
-    grid-area: wasser_text;  
+    grid-area: wasser_text;
     color: #64bc45;
     font-family: "Indie Flower";
     font-weight: 500;
 }
 
-.schweinefleisch  {
+.schweinefleisch {
     grid-area: schweinefleisch;
     display: block;
     margin-left: auto;
@@ -98,7 +124,7 @@ $Abstandfließtextgroß: 100px;
 }
 
 .schweinefleisch_text {
-    grid-area: schweinefleisch_text;  
+    grid-area: schweinefleisch_text;
     color: #64bc45;
     font-family: "Indie Flower";
     font-weight: 500;
@@ -113,7 +139,7 @@ $Abstandfließtextgroß: 100px;
 }
 
 .sojaisolat_text {
-    grid-area: sojaisolat_text;  
+    grid-area: sojaisolat_text;
     color: #64bc45;
     font-family: "Indie Flower";
     font-weight: 500;
@@ -128,7 +154,7 @@ $Abstandfließtextgroß: 100px;
 }
 
 .kartoffelstärke_text {
-    grid-area: kartoffelstärke_text;  
+    grid-area: kartoffelstärke_text;
     color: #64bc45;
     font-family: "Indie Flower";
     font-weight: 500;
@@ -143,7 +169,7 @@ $Abstandfließtextgroß: 100px;
 }
 
 .sonnenblumenöl_text {
-    grid-area: sonnenblumenöl_text;  
+    grid-area: sonnenblumenöl_text;
     color: #64bc45;
     font-family: "Indie Flower";
     font-weight: 500;
@@ -158,7 +184,7 @@ $Abstandfließtextgroß: 100px;
 }
 
 .gewürze_text {
-    grid-area: gewürze_text;  
+    grid-area: gewürze_text;
     color: #64bc45;
     font-family: "Indie Flower";
     font-weight: 500;
@@ -173,28 +199,28 @@ $Abstandfließtextgroß: 100px;
 }
 
 .hilfsmittel_text {
-    grid-area: hilfsmittel_text;  
+    grid-area: hilfsmittel_text;
     color: #64bc45;
     font-family: "Indie Flower";
     font-weight: 500;
 }
 
-
 .box {
-     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-   
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+
     border-radius: 12px;
 }
 
 .textzentrierer {
-    height:100%; width:100%;
+    height: 100%;
+    width: 100%;
     display: table;
 }
 
-.textzentrierer p{
+.textzentrierer p {
     display: table-cell;
     vertical-align: middle;
-    text-align:center;
+    text-align: center;
 }
 
 .zubereitungshinweise_überschrift {
@@ -234,25 +260,24 @@ $Abstandfließtextgroß: 100px;
     white-space: nowrap;
 }
 
-
 @media only screen and (min-width: 1000px) {
-
     .inhaltsstoffe_übersicht {
         grid-area: inhaltsstoffe_übersicht;
         display: grid;
         margin: 40px auto 0 auto;
         grid-template-columns: 45vw 45vw;
         grid-template-rows: 45vw 45vw 45vw 45vw 45vw 45vw 45vw;
-        grid-template-areas: "wasser wasser_text" 
-        "schweinefleisch_text schweinefleisch" 
-        "sojaisolat sojaisolat_text"
-        "kartoffelstärke_text kartoffelstärke" 
-        "sonnenblumenöl sonnenblumenöl_text"
-        "gewürze_text gewürze" 
-        "hilfsmittel hilfsmittel_text";
+        grid-template-areas:
+            "wasser wasser_text"
+            "schweinefleisch_text schweinefleisch"
+            "sojaisolat sojaisolat_text"
+            "kartoffelstärke_text kartoffelstärke"
+            "sonnenblumenöl sonnenblumenöl_text"
+            "gewürze_text gewürze"
+            "hilfsmittel hilfsmittel_text";
         grid-row-gap: 20px;
     }
-    
+
     .textgrößeüberschriften {
         font-size: $fontsizeHeadinggroß;
     }
@@ -261,7 +286,7 @@ $Abstandfließtextgroß: 100px;
         font-size: $fontsizeFließtextgroß;
         margin: $Abstandfließtextgroß;
     }
-    
+
     .textgrößezutaten {
         font-size: $fontsizeZutatengroß;
     }

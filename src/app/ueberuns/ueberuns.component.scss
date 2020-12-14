@@ -29,13 +29,14 @@ $Merkmalschriftgroß: 3rem;
 
 .video iframe {
     width: 100%;
-    height: 100%;
+    height: 100%;  
+      border-radius: 12px;
 }
 
 .team_überschrift {
     grid-area: team_überschrift;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 24px;
     text-align: auto;
     color: #64bc45;
     font-family: "Indie Flower";

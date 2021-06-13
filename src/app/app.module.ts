@@ -9,7 +9,6 @@ import { BratwurstproComponent } from './bratwurstpro/bratwurstpro.component';
 import { CardComponent } from './card/card.component';
 import { ImpressumComponent } from './impressum/impressum.component';
 import { NgcCookieConsentConfig, NgcCookieConsentModule } from 'ngx-cookieconsent';
-import { strict } from 'assert';
 
 
 const cookieConfig: NgcCookieConsentConfig = {

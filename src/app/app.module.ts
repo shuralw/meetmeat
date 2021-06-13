@@ -13,7 +13,7 @@ import { NgcCookieConsentConfig, NgcCookieConsentModule } from 'ngx-cookieconsen
 
 const cookieConfig: NgcCookieConsentConfig = {
   "cookie": {
-    "domain": "localhost",
+    "domain": "meetmeat-b5332.web.app",
   },
   "position": "top",
   "theme": "classic",

@@ -159,6 +159,7 @@ $Merkmalschriftgroß: 3rem;
 
 .merkmalschrift {
     font-size: $Merkmalschrift;
+    text-align: center;
 }
 
 .nobr {
@@ -178,6 +179,7 @@ $Merkmalschriftgroß: 3rem;
     grid-area: spacing_unten;
 }
 .obere_Zeile {
+    text-align: center;
     grid-area: obere_Zeile;
 }
 

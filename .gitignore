@@ -137,3 +137,4 @@ samples/ios/Continote/Continote/FCNContinue.m
 .DS_Store
 *.swp
 
+.firebase/*.cache

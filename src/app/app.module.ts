@@ -15,7 +15,6 @@ import { strict } from 'assert';
 const cookieConfig: NgcCookieConsentConfig = {
   "cookie": {
     "domain": "localhost",
-    sameSite: "Strict"
   },
   "position": "top",
   "theme": "classic",

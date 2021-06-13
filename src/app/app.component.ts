@@ -35,7 +35,7 @@ export class AppComponent {
 
     this.initializeSubscription = this.ccService.initialize$.subscribe(
       (event: NgcInitializeEvent) => {
-        this.ccService.getConfig().
+        // this.ccService.getConfig().
       });
 
     this.statusChangeSubscription = this.ccService.statusChange$.subscribe(
